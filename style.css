@@ -1,1 +1,166 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 7px;
+}
+
+body{
+    font-family: "Josefin Sans", sans-serif;
+    color:darkred;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+a{
+    text-decoration:none;
+}
+
+p{
+    padding: 1.6rem 0;
+    margin: 0rem 3rem;
+    
+}
+
+header{
+    height: 45rem;
+    
+   
+}
+
+header .bg-image{
+    position:absolute;
+    background-image: url(images/eco1.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 30rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+
+
+}
+
+header h1{
+    padding: 12rem;
+    padding-bottom: 0;
+}
+
+.btn{
+    display:inline-block;
+    background:forestgreen;
+    color: darkred;
+    border: 1px solid;
+    padding: 1rem 1.2rem;
+    margin: 0.5rem 0;
+    transition:all 0.4s;
+}
+
+.hidden{
+    display:none;
+}
+
+.btn:hover {
+    background-color:lightgreen;
+
+}
+
+#readMoreText{
+    display:none;
+    position:relative;
+    margin-top: 12px;
+}
+
+.content{
+    position: relative;
+    z-index: 1;
+}
+
+#section-a{
+    background-color: rgb(147, 187, 62);
+    padding:4.2rem 0;
+    margin: 3rem 0;
+    color:grey;
+}
+
+img{
+    width: 50%;
+    height: auto;
+}
+
+
+#section-b ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#section-b li{
+    background: black;
+    min-height:100vh;
+    padding: 20px;
+    width:100%;
+    
+}
+
+.col-content{
+    padding: 5rem;
+}
+
+#section-c{
+    background-color: darkgreen;
+    color:brown;
+    padding: 4rem;
+    line-height: 1;
+    
+}
+.underline{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+}
+
+@media screen and (min-width:400px){
+    html{
+        font-size:7px;
+    }
+    #section-b li{
+        width:100%;
+        margin:1%;
+    }
+}
+
+
+
+
+@media screen and (min-width:800px){
+    html{
+        font-size:9px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    html{
+        font-size:11px;
+    }
+    #section-b li{
+        width:100%;
+        margin: 1%;
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
