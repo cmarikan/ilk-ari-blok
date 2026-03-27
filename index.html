@@ -1,1 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cevdet Site</title>
+
+    <script src="https://kit.fontawesome.com/90c548eb9d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="bg-image"></div>
+        <div class="content">
+            <h1>Cevdet Murat Arıkan @cevdetmuratrkn</h1>
+            <p>Economic Data Analyst & Hobbyist Botanic </p>
+
+            <a href="#" class="btn" onclick="toggleText(event)">Read More</a>
+
+            <p id="readMoreText" style="display:none;"> Adım;Murat Arıkan 1972 yılında Ankara Yenimahalle dünya'ya
+                geldim.
+                üç kardeş içerisinde en büyükleriyim,üçümüzde erkek evladıyız.İlk orta ve lise öğrenimimi
+                Ankarada tamamladım,fakat lise öğrenimimin son yılını Muğla Köyceğiz Endüstri Meslek Lisesi
+                Elektrik mezunu olarak tamamladım.Üniversite öğrenimimi K.K.T.C 'de Doğu Akdeniz Üniversitesi
+                Turizm Ve Otel İşletmeciliği ön lisans mezunu olarak tamamladım.ikinci Üniversite öğrenimimi
+                ise Anadolu Üniversitesi Açıköğretim Fakültesi İktisat bölümünde tamamladım. İngilizce
+                bilmekteyim.
+
+                Evli ve iki kız çoğu babasıyım iş hayatımın büyük bir bölümünü araç kiralama sektöründe ve bir
+                kısmınıda toptan gıda sektöründe pazarlama ve yönetici pozisyonlarında çalışarak geçirdim.
+                Ekonomi ve ekonomik verileri analiz etmek almış olduğum eğitimin bir parçası olmuştur.
+
+
+            </p>
+
+
+
+        </div>
+        <script>
+            function toggleText(e) {
+                e.preventDefault();
+                var text =
+                    document.getElementById("readMoreText");
+                text.classList.toggle("hidden");
+                if (text.style.display === "none") {
+                    text.style.display = "block";
+                } else {
+                    text.style.display = "none";
+                }
+            }
+        </script>
+
+
+
+
+    </header>
+
+    <main>
+        <section id="section-a">
+            <div class="content">
+                <h2>OECD Analysis</h2>
+                <p>Türkiye'nin OECD ülkeleri arasındaki enflasyon verileri,
+                    Gini katsayısı oranı,altın ve döviz verileri
+                </p>
+            </div>
+        </section>
+
+        <section id="section-b">
+            <ul>
+                <li>
+                    <div class="col">
+                        <img src="images/altin1.jpg" alt="">
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="col">
+                        <img src="images/dollar.jpg" alt="">
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="col">
+                        <img src="images/gsyh.jpg" alt="">
+
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="col">
+                        <img src="images/labour.jpg" alt="">
+
+
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <section id="section-c">
+            <div class="box">
+                <h3 onclick="toggleFooter('about')"><span class="underline">
+                    About Us</span>
+                    
+                </h3>
+                <p id="about" class="section-c text">2025 yılından bu yana kendimi web programlamasında
+                    sürekli olarak geliştirme aşamasındayım.Web tasarımı
+                    projelerinde her türlü katkıyı sunmaktayım.
+                </p>
+            </div>
+
+
+
+
+            <div id="contact" class="box">
+                <h3 onclick="toggleFooter('contact')"><span class="underline">
+                    Contact Us</span>
+                    
+                </h3>
+
+                <p> <i class="fa-solid fa-envelope-circle-check"></i> cevdetmuratrkn@gmail.com</p>
+
+                <p> <i class="fa-brands fa-instagram"></i> cevdetmuratrkn</p>
+
+                <p><i class="fa-regular fa-copyright"></i>2026</p>
+            </div>
+        </section>
+
+    </main>
+    
+
+</body>
+
+</html>
