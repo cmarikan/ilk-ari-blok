@@ -5,7 +5,7 @@
 }
 
 html{
-    font-size: 7px;
+    font-size: 10px;
 }
 
 body{
@@ -27,8 +27,12 @@ p{
     
 }
 
-header{
-    height: 45rem;
+.header{
+    width: 100%;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+    text-align: center;
     
    
 }
@@ -46,9 +50,8 @@ header .bg-image{
 
 }
 
-header h1{
-    padding: 12rem;
-    padding-bottom: 0;
+.header h1{
+    font-size: 1.5rem;
 }
 
 .btn{
@@ -56,8 +59,8 @@ header h1{
     background:forestgreen;
     color: darkred;
     border: 1px solid;
-    padding: 1rem 1.2rem;
-    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+    margin-top: 10 rem;
     transition:all 0.4s;
 }
 
@@ -71,9 +74,9 @@ header h1{
 }
 
 #readMoreText{
-    display:none;
+    display:inline-block;
     position:relative;
-    margin-top: 12px;
+    margin-top: 8px;
 }
 
 .content{
@@ -83,33 +86,33 @@ header h1{
 
 #section-a{
     background-color: rgb(147, 187, 62);
-    padding:4.2rem 0;
+    padding:3.2rem 0;
     margin: 3rem 0;
     color:grey;
 }
 
 img{
-    width: 50%;
+    width: 100%;
     height: auto;
+}
+
+#section-b{
+    padding:2rem;
 }
 
 
 #section-b ul{
     list-style:none;
-    display:flex;
-    flex-wrap:wrap;
+    
 }
 
 #section-b li{
     background: black;
-    min-height:100vh;
-    padding: 20px;
-    width:100%;
-    
+    margin-bottom: 1.5rem;
 }
 
 .col-content{
-    padding: 5rem;
+    padding: 1.5rem;
 }
 
 #section-c{
@@ -124,35 +127,29 @@ img{
     text-decoration-thickness: 3px;
 }
 
-@media screen and (min-width:400px){
-    html{
-        font-size:7px;
+.responsive-img{
+    display: block;
+    width:100%;
+    max-width: 320px;
+    height:auto;
+    margin:20px auto 0;
+}
+
+@media screen and (min-width:401px)and(max-width:800px){
+    .responsive-img{
+        width: 600px;
     }
-    #section-b li{
-        width:100%;
-        margin:1%;
-    }
+
 }
 
 
-
-
-@media screen and (min-width:800px){
-    html{
-        font-size:9px;
+@media screen and (min-width:801px){
+    .responsive-img{
+        width:900px;
     }
-}
-
-@media screen and (min-width:1200px){
-    html{
-        font-size:11px;
-    }
-    #section-b li{
-        width:100%;
-        margin: 1%;
     
-    }
 }
+
 
 
 
